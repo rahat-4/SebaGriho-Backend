@@ -44,7 +44,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
 ]
 
-PROJECT_APPS = ["authentication"]
+PROJECT_APPS = ["authentication", "doctor"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
