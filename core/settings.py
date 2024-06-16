@@ -40,11 +40,9 @@ DJANGO_APPS = [
 ]
 
 
-THIRD_PARTY_APPS = [
-    "rest_framework",
-]
+THIRD_PARTY_APPS = ["rest_framework", "phonenumber_field"]
 
-PROJECT_APPS = ["authentication", "doctor"]
+PROJECT_APPS = ["authentication", "doctor", "patient"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 

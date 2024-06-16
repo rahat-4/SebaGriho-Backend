@@ -9,6 +9,8 @@ from django.utils import timezone
 
 from autoslug import AutoSlugField
 
+from phonenumber_field.modelfields import PhoneNumberField
+
 from .choices import BloodGroups, UserGender, UserStatus
 from .managers import MyUserManager
 from .utils import get_user_media_path_prefix, get_user_slug
@@ -23,6 +25,7 @@ class MyUser(AbstractBaseUser, BaseModelWithUid, PermissionsMixin):
         max_length=255,
         unique=True,
     )
+    phone = PhoneNumberField(blank=True)
     first_name = models.CharField(max_length=255, blank=True, null=True)
     last_name = models.CharField(max_length=255, blank=True, null=True)
     nid = models.CharField(max_length=20, blank=True)

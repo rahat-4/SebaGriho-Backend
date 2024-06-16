@@ -1,5 +1,7 @@
 from django.db import models
 
+from phonenumber_field.modelfields import PhoneNumberField
+
 from authentication.models import MyUser
 
 from common.models import BaseModelWithUid
@@ -38,6 +40,8 @@ class Doctor(BaseModelWithUid):
     user = models.OneToOneField(
         MyUser, on_delete=models.CASCADE, related_name="doctors"
     )
+    secondary_phone = PhoneNumberField(blank=True)
+    secondary_email = models.EmailField(blank=True)
     department = models.ForeignKey(Department, models.SET_NULL, blank=True, null=True)
     experience = models.IntegerField()
     appointment_fee = models.DecimalField(
