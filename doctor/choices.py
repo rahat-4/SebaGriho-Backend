@@ -1,6 +1,11 @@
 from django.db import models
 
 
+class AffiliationStatus(models.TextChoices):
+    CURRENT = "CURRENT", "Current"
+    PAST = "PAST", "Past"
+
+
 class DoctorStatus(models.TextChoices):
     INVITED = "INVITED", "Invited"
     PENDING = "PENDING", "Pending"
