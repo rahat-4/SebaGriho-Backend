@@ -1,0 +1,69 @@
+{
+    "doctor": {
+        "user": {
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "johndoe@example.com",
+            "phone": "+8801795900904"
+        },
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "department": {
+            "name": "Cardiology",
+            "description": "Specializes in heart-related issues."
+        },
+        "experience": 10
+    },
+    "degree": [
+        {
+            "name": "Doctor of Medicine",
+            "institute": "Medical College",
+            "result": "Distinction",
+            "passing_year": "2010-08-08"
+        },
+        {
+            "name": "Master of Science",
+            "institute": "University of Health Sciences",
+            "result": "First Class",
+            "passing_year": "2015-08-08"
+        }
+    ],
+    "achievement": [
+        {
+            "name": "Outstanding Doctor Award",
+            "source": "Medical Association",
+            "year": "2018-08-08"
+        },
+        {
+            "name": "Research Paper Award",
+            "source": "International Medical Conference",
+            "year": "2019-08-08"
+        }
+    ],
+    "specialty": [
+        {
+            "name": "Cardiac Electrophysiology",
+            "department": {
+                "name": "Cardiology",
+                "description": "Specializes in heart-related issues."
+            }
+        },
+        {
+            "name": "Interventional Cardiology",
+            "department": {
+                "name": "Cardiology",
+                "description": "Specializes in heart-related issues."
+            }
+        }
+    ],
+    "affiliation": [
+        {
+            "title": "Consultant Cardiologist",
+            "hospital_name": "City Hospital"
+        },
+        {
+            "title": "Visiting Specialist",
+            "hospital_name": "General Hospital"
+        }
+    ],
+    "language_spoken": [{"language": "English"}, {"language": "Bangla"}]
+}
