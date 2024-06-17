@@ -92,17 +92,19 @@ class Doctor(BaseModelWithUid):
 
 
 class DoctorAdditionalConnector(BaseModelWithUid):
-    doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE)
-    expertise = models.ForeignKey(
-        Specialty, on_delete=models.CASCADE, null=True, blank=True
+    doctor = models.ForeignKey(
+        Doctor, on_delete=models.CASCADE, related_name="additional_connectors"
     )
-    degree = models.ForeignKey(Degree, on_delete=models.CASCADE, null=True, blank=True)
-    achievement = models.ForeignKey(
-        Achievement, on_delete=models.CASCADE, null=True, blank=True
+    specialty = models.ManyToManyField(
+        Specialty, blank=True, related_name="doctor_specialties"
     )
-    affiliation = models.ForeignKey(
-        Affiliation, on_delete=models.CASCADE, null=True, blank=True
+    degree = models.ManyToManyField(Degree, blank=True, related_name="doctor_degrees")
+    achievement = models.ManyToManyField(
+        Achievement, blank=True, related_name="doctor_achievements"
     )
-    language_spoken = models.ForeignKey(
-        LanguageSpoken, on_delete=models.CASCADE, null=True, blank=True
+    affiliation = models.ManyToManyField(
+        Affiliation, blank=True, related_name="doctor_affiliations"
+    )
+    language_spoken = models.ManyToManyField(
+        LanguageSpoken, blank=True, related_name="doctor_languages"
     )

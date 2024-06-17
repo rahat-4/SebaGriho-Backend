@@ -7,23 +7,12 @@ from doctor.models import (
     Affiliation,
     Degree,
     Department,
+    Doctor,
     Specialty,
     LanguageSpoken,
 )
 
 User = get_user_model()
-
-
-class UserSlimSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ["first_name", "last_name", "email", "phone"]
-
-
-class LanguageSpokenSlimSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = LanguageSpoken
-        fields = ["language"]
 
 
 class DepartmentSlimSerializer(serializers.ModelSerializer):
@@ -32,7 +21,30 @@ class DepartmentSlimSerializer(serializers.ModelSerializer):
         fields = ["name", "description"]
 
 
+class UserSlimSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["first_name", "last_name", "email", "phone"]
+
+
+class DoctorSlimSerializer(serializers.ModelSerializer):
+    user = UserSlimSerializer()
+    department = DepartmentSlimSerializer()
+
+    class Meta:
+        model = Doctor
+        fields = ["user", "about", "department", "experience"]
+
+
+class LanguageSpokenSlimSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LanguageSpoken
+        fields = ["language"]
+
+
 class SpecialtySlimSerializer(serializers.ModelSerializer):
+    department = DepartmentSlimSerializer()
+
     class Meta:
         model = Specialty
         fields = ["name", "department"]

@@ -5,7 +5,7 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = "Remove __pycache__ directories and migration files except __init__.py"
+    help = "Remove __pycache__ directories, migration files except __init__.py, and db.sqlite3"
 
     def handle(self, *args, **kwargs):
         # Define the root directory for the project
@@ -26,5 +26,11 @@ class Command(BaseCommand):
                         file_path = os.path.join(dirpath, filename)
                         os.remove(file_path)
                         self.stdout.write(self.style.SUCCESS(f"Removed: {file_path}"))
+
+        # Remove db.sqlite3 if it exists
+        db_path = os.path.join(root_dir, "db.sqlite3")
+        if os.path.exists(db_path):
+            os.remove(db_path)
+            self.stdout.write(self.style.SUCCESS(f"Removed: {db_path}"))
 
         self.stdout.write(self.style.SUCCESS("Clean up complete!"))
