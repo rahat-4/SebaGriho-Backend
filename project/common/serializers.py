@@ -24,7 +24,7 @@ class DepartmentSlimSerializer(serializers.ModelSerializer):
 class UserSlimSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["first_name", "last_name", "email", "phone"]
+        fields = ["first_name", "last_name", "email", "phone", "gender"]
 
 
 class DoctorSlimSerializer(serializers.ModelSerializer):
@@ -59,7 +59,7 @@ class AchievementSlimSerializer(serializers.ModelSerializer):
 class DegreeSlimSerializer(serializers.ModelSerializer):
     class Meta:
         model = Degree
-        fields = ["name", "institute", "result", "passing_year"]
+        fields = ["name", "institute", "result", "passing_year", "country"]
 
 
 class AffiliationSlimSerializer(serializers.ModelSerializer):

@@ -1,0 +1,99 @@
+{
+    "departments": [
+      {
+        "name": "Internal Medicine",
+        "sub_departments": [
+          "Cardiology",
+          "Gastroenterology",
+          "Pulmonology",
+          "Endocrinology",
+          "Nephrology",
+          "Hematology",
+          "Infectious Disease"
+        ]
+      },
+      {
+        "name": "Surgery",
+        "sub_departments": [
+          "General Surgery",
+          "Orthopedic Surgery",
+          "Neurosurgery",
+          "Cardiac Surgery",
+          "Vascular Surgery",
+          "Plastic Surgery",
+          "Thoracic Surgery"
+        ]
+      },
+      {
+        "name": "Pediatrics",
+        "sub_departments": [
+          "Neonatology",
+          "Pediatric Cardiology",
+          "Pediatric Neurology",
+          "Pediatric Oncology",
+          "Pediatric Endocrinology"
+        ]
+      },
+      {
+        "name": "Obstetrics and Gynecology",
+        "sub_departments": [
+          "Maternal-Fetal Medicine",
+          "Reproductive Endocrinology",
+          "Gynecologic Oncology",
+          "Urogynecology"
+        ]
+      },
+      {
+        "name": "Neurology",
+        "sub_departments": [
+          "Stroke",
+          "Epilepsy",
+          "Movement Disorders",
+          "Multiple Sclerosis",
+          "Neuromuscular Disorders"
+        ]
+      },
+      {
+        "name": "Psychiatry",
+        "sub_departments": [
+          "Child and Adolescent Psychiatry",
+          "Geriatric Psychiatry",
+          "Addiction Psychiatry",
+          "Forensic Psychiatry"
+        ]
+      },
+      {
+        "name": "Radiology",
+        "sub_departments": [
+          "Diagnostic Radiology",
+          "Interventional Radiology",
+          "Nuclear Medicine",
+          "Neuroradiology"
+        ]
+      },
+      {
+        "name": "Anesthesiology",
+        "sub_departments": [
+          "Pain Medicine",
+          "Critical Care Medicine",
+          "Pediatric Anesthesiology"
+        ]
+      },
+      {
+        "name": "Dermatology",
+        "sub_departments": [
+          "Mohs Surgery",
+          "Pediatric Dermatology",
+          "Dermatopathology"
+        ]
+      },
+      {
+        "name": "Emergency Medicine",
+        "sub_departments": [
+          "Trauma",
+          "Toxicology",
+          "Pediatric Emergency Medicine"
+        ]
+      }
+    ]
+  }

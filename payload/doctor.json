@@ -1,69 +1,58 @@
 {
-    "doctor": {
-        "user": {
-            "first_name": "John",
-            "last_name": "Doe",
-            "email": "johndoe@example.com",
-            "phone": "+8801795900904"
-        },
-        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "department": {
-            "name": "Cardiology",
-            "description": "Specializes in heart-related issues."
-        },
-        "experience": 10
+    "user": {
+      "email": "nahid@example.com",
+      "phone": "+8801776199864",
+      "first_name": "Nahid",
+      "last_name": "Hasan"
     },
-    "degree": [
-        {
-            "name": "Doctor of Medicine",
-            "institute": "Medical College",
-            "result": "Distinction",
-            "passing_year": "2010-08-08"
-        },
-        {
-            "name": "Master of Science",
-            "institute": "University of Health Sciences",
-            "result": "First Class",
-            "passing_year": "2015-08-08"
-        }
+    "about": "Experienced physician specializing in internal medicine.",
+    "experience": 4,
+    "appointment_fee": 300,
+    "consultation_fee": 300,
+    "follow_up_fee": 100,
+    "check_up_fee": 100,
+    "status": "ACTIVE",
+    "degrees": [
+      {
+        "name": "MBBS",
+        "institution": "Dhaka Medical College",
+        "year": 2005
+      },
+      {
+        "name": "FCPS",
+        "institution": "Johns Hopkins University",
+        "year": 2010
+      }
     ],
-    "achievement": [
-        {
-            "name": "Outstanding Doctor Award",
-            "source": "Medical Association",
-            "year": "2018-08-08"
-        },
-        {
-            "name": "Research Paper Award",
-            "source": "International Medical Conference",
-            "year": "2019-08-08"
-        }
+    "achievements": [
+      {
+        "name": "Best Doctor Award",
+        "year": 2015,
+        "source": "Awarded the best doctor in the state."
+      }
     ],
-    "specialty": [
-        {
-            "name": "Cardiac Electrophysiology",
-            "department": {
-                "name": "Cardiology",
-                "description": "Specializes in heart-related issues."
-            }
-        },
-        {
-            "name": "Interventional Cardiology",
-            "department": {
-                "name": "Cardiology",
-                "description": "Specializes in heart-related issues."
-            }
+    "specialties": [
+      {
+        "name": "Medicine",
+        "department": {
+          "name": "Internal Medicine"
         }
+      }
     ],
-    "affiliation": [
-        {
-            "title": "Consultant Cardiologist",
-            "hospital_name": "City Hospital"
-        },
-        {
-            "title": "Visiting Specialist",
-            "hospital_name": "General Hospital"
-        }
+    "affiliations": [
+      {
+        "hospital_name": "Islami Bank Hospital, Mugda",
+        "title": "Consultant",
+        "start_year": 2011
+      }
     ],
-    "language_spoken": [{"language": "English"}, {"language": "Bangla"}]
-}
+    "languages_spoken": [
+      {
+        "language": "English"
+      },
+      {
+        "language": "Bangla"
+      }
+    ]
+  }
+  

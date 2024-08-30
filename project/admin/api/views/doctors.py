@@ -1,10 +1,8 @@
 from rest_framework.generics import ListCreateAPIView
-
-from doctor.models import DoctorAdditionalConnector
-
+from doctor.models import Doctor
 from ..serializers.doctors import AdminDoctorListSerializer
 
 
 class AdminDoctorList(ListCreateAPIView):
-    queryset = DoctorAdditionalConnector.objects.all()
+    queryset = Doctor.objects.all()
     serializer_class = AdminDoctorListSerializer
